@@ -97,7 +97,7 @@
     }
     .site-header .logo img { height: 42px; width: auto; }
     .header-btn {
-      background: var(--cyan);
+      background: #f5a623;
       color: #fff;
       font-size: 0.76rem;
       font-weight: 700;
@@ -106,7 +106,7 @@
       letter-spacing: .04em;
       transition: background .2s, transform .2s;
     }
-    .header-btn:hover { background: var(--cyan-dark); transform: translateY(-1px); }
+    .header-btn:hover { background: #e09010; transform: translateY(-1px); }
 
     /* ===== Hero ===== */
     .hero {
@@ -128,7 +128,7 @@
       position: absolute;
       bottom: -2px; left: 0; right: 0;
       height: 60px;
-      background: var(--page-bg);
+      background: var(--card-bg);
       clip-path: ellipse(55% 100% at 50% 100%);
     }
     .hero > * { position: relative; z-index: 1; }
@@ -166,8 +166,8 @@
     .hero-tags { margin-bottom: 44px; }
     .hero-cta {
       display: inline-block;
-      background: #fff;
-      color: var(--cyan-dark);
+      background: #f5a623;
+      color: #fff;
       font-size: 0.95rem;
       font-weight: 700;
       padding: 16px 52px;
@@ -177,6 +177,7 @@
       transition: transform .2s, box-shadow .2s;
     }
     .hero-cta:hover {
+      background: #e09010;
       transform: translateY(-3px);
       box-shadow: 0 8px 28px rgba(0,0,0,0.2);
     }
@@ -420,8 +421,8 @@
     }
     .cta-btn {
       display: inline-block;
-      background: #fff;
-      color: var(--cyan-dark);
+      background: #f5a623;
+      color: #fff;
       font-size: 0.95rem;
       font-weight: 700;
       padding: 17px 56px;
@@ -431,6 +432,7 @@
       transition: transform .2s, box-shadow .2s;
     }
     .cta-btn:hover {
+      background: #e09010;
       transform: translateY(-3px);
       box-shadow: 0 8px 28px rgba(0,0,0,0.2);
     }
@@ -500,7 +502,7 @@
     .check-label input { width: auto; accent-color: var(--cyan); }
     .form-submit { text-align: center; margin-top: 36px; }
     .submit-btn {
-      background: var(--cyan);
+      background: #f5a623;
       color: #fff;
       font-size: 0.95rem;
       font-weight: 700;
@@ -509,13 +511,13 @@
       border-radius: 50px;
       cursor: pointer;
       letter-spacing: .06em;
-      box-shadow: 0 4px 16px rgba(0,188,212,0.3);
+      box-shadow: 0 4px 16px rgba(245,166,35,0.35);
       transition: background .2s, transform .2s, box-shadow .2s;
     }
     .submit-btn:hover {
-      background: var(--cyan-dark);
+      background: #e09010;
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,188,212,0.35);
+      box-shadow: 0 8px 24px rgba(245,166,35,0.4);
     }
     .form-note { margin-top: 12px; font-size: 0.76rem; color: var(--muted); }
     .form-success {
@@ -528,6 +530,36 @@
       font-weight: 700;
       line-height: 1.8;
     }
+    /* ===== Phone Apply ===== */
+    .phone-apply {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      background: var(--card-bg);
+      border: 2px solid #f5a623;
+      border-radius: 14px;
+      padding: 20px 28px;
+      margin-bottom: 24px;
+    }
+    .phone-apply-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .phone-apply-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #f5a623;
+      letter-spacing: .02em;
+    }
+    .phone-apply-num:hover { text-decoration: underline; }
+    .phone-apply-hours {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
     .contact-info {
       text-align: center;
       padding: 28px;
@@ -842,8 +874,8 @@
         <p>私たちは愛知県半田市を拠点に、地域の住まいづくりを支え続けてきた会社です。</p>
       </div>
       <img
-        src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&fit=crop&q=80&auto=format"
-        alt="地域の住宅街"
+        src="images/事務所外観.png"
+        alt="イシンホーム半田店 事務所外観"
         class="about-banner"
       >
       <div class="about-grid">
@@ -963,7 +995,7 @@
         <tbody>
           <tr>
             <th>会社名</th>
-            <td>株式会社チタコーポレーション（建築課：イシンホーム半田店）</td>
+            <td>株式会社チタコーポレーション</td>
           </tr>
           <tr>
             <th>募集職種</th>
@@ -979,20 +1011,20 @@
           </tr>
           <tr>
             <th>勤務地</th>
-            <td>愛知県半田市山代町2-104-7　イシンホーム半田店</td>
+            <td>愛知県半田市山代町2-104-7</td>
           </tr>
           <tr>
             <th>勤務時間</th>
-            <td>応相談（シフト制）</td>
+            <td>9:00〜17:00の中で調整可（1日5時間〜）</td>
           </tr>
           <tr>
             <th>休日</th>
-            <td>シフトによる（土日祝出勤可能な方歓迎）</td>
+            <td>シフトによる（事務所定休日：火・水）</td>
           </tr>
           <tr>
             <th>応募資格</th>
             <td>
-              ・未経験歓迎（20〜30代活躍中）<br>
+              ・未経験歓迎<br>
               ・学歴・経験不問<br>
               ・基本的なPC操作ができる方（ExcelやWordが使える方は尚可）
             </td>
@@ -1027,6 +1059,12 @@
         <p>下記フォームにご記入の上、送信してください。<br>担当者よりご連絡いたします。</p>
       </div>
 
+      <div class="phone-apply">
+        <span class="phone-apply-label">📞 お電話でも応募を受け付けています</span>
+        <a href="tel:0569-21-5555" class="phone-apply-num">0569-21-5555</a>
+        <span class="phone-apply-hours">（受付時間：9:00〜17:00 ／ 火・水定休）</span>
+      </div>
+
       <form class="apply-form" name="apply" method="POST" action="https://formspree.io/f/xjgpdywv">
         <div class="form-group">
           <label for="name">お名前 <span class="required">必須</span></label>
@@ -1056,16 +1094,6 @@
             <label class="check-label"><input type="checkbox" name="days" value="日曜"> 日曜</label>
             <label class="check-label"><input type="checkbox" name="days" value="祝日"> 祝日</label>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="experience">事務経験 <span class="optional">任意</span></label>
-          <select id="experience" name="experience">
-            <option value="">選択してください</option>
-            <option value="未経験">未経験</option>
-            <option value="1年未満">1年未満</option>
-            <option value="1〜3年">1〜3年</option>
-            <option value="3年以上">3年以上</option>
-          </select>
         </div>
         <div class="form-group">
           <label for="message">ひとこと・質問など <span class="optional">任意</span></label>
