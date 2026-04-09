@@ -110,7 +110,7 @@
 
     /* ===== Hero ===== */
     .hero {
-      background: var(--cyan);
+      background: var(--cyan) url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&fit=crop&q=80&auto=format') center/cover no-repeat;
       color: #fff;
       padding: 80px 20px 100px;
       text-align: center;
@@ -121,8 +121,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(160deg, #00d4f0 0%, #0097a7 100%);
-      opacity: 0.6;
+      background: linear-gradient(160deg, rgba(0,188,212,0.82) 0%, rgba(0,100,130,0.88) 100%);
     }
     .hero::after {
       content: '';
@@ -550,7 +549,23 @@
     }
     .site-footer strong { color: rgba(255,255,255,0.75); }
 
+    /* ===== Job Image ===== */
+    .job-feature-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
+
     /* ===== About Company ===== */
+    .about-banner {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
     .about-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -573,11 +588,39 @@
     }
     .about-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.8; }
 
+    /* ===== Atmosphere Photos ===== */
+    .atm-photos {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 12px;
+      margin-bottom: 32px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .atm-photos img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
     /* ===== Who We Want ===== */
+    .who-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .who-img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
     .who-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 16px;
     }
     .who-card {
       border-radius: 16px;
@@ -612,7 +655,11 @@
       .hero { padding: 64px 20px 80px; }
       .points-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
+      .who-layout { grid-template-columns: 1fr; }
+      .who-img { aspect-ratio: 16/7; }
       .who-grid { grid-template-columns: 1fr; }
+      .atm-photos { grid-template-columns: 1fr; }
+      .atm-photos img { height: 180px; }
       .atmosphere-grid { grid-template-columns: 1fr; }
       .apply-form { padding: 28px 20px; }
       .salary-row { flex-wrap: wrap; gap: 6px; padding: 14px 20px; }
@@ -667,8 +714,13 @@
         <p>住宅建築をサポートする営業事務スタッフのお仕事です。<br>一つひとつ丁寧にお教えしますので、事務が初めての方もご安心ください。</p>
       </div>
 
+      <img
+        src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1000&fit=crop&q=80&auto=format"
+        alt="笑顔でデスクワークをするスタッフ"
+        class="job-feature-img"
+      >
       <div class="job-intro">
-        書類作成・請求書処理など、日々のオフィス業務全般をお任せします。<strong>テンプレートやマニュアルが整っている</strong>ので、未経験からでもしっかり習得できます。
+        書類作成・お客様応対など、日々のオフィス業務全般をお任せします。<strong>テンプレートやマニュアルが整っている</strong>ので、未経験からでもしっかり習得できます。
       </div>
 
       <ul class="job-list">
@@ -789,6 +841,11 @@
         <h2>チタコーポレーションについて</h2>
         <p>私たちは愛知県半田市を拠点に、地域の住まいづくりを支え続けてきた会社です。</p>
       </div>
+      <img
+        src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&fit=crop&q=80&auto=format"
+        alt="地域の住宅街"
+        class="about-banner"
+      >
       <div class="about-grid">
         <div class="about-card">
           <div class="about-icon">🏢</div>
@@ -815,6 +872,16 @@
       <div class="section-head">
         <span class="en">Culture</span>
         <h2>職場の雰囲気</h2>
+      </div>
+      <div class="atm-photos">
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&fit=crop&q=80&auto=format"
+          alt="スタッフが楽しそうに話し合っている様子"
+        >
+        <img
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&fit=crop&q=80&auto=format"
+          alt="チームで協力している様子"
+        >
       </div>
       <div class="atmosphere-grid">
         <div class="atm-card">
@@ -852,7 +919,13 @@
         <h2>こんな方にぴったりのお仕事です</h2>
         <p>当てはまる方はぜひご応募ください！</p>
       </div>
-      <div class="who-grid">
+      <div class="who-layout">
+        <img
+          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&fit=crop&q=80&auto=format"
+          alt="デスクで笑顔で働く女性スタッフ"
+          class="who-img"
+        >
+        <div class="who-grid">
         <div class="who-card who-yes">
           <div class="who-label">こんな方、大歓迎！</div>
           <ul class="who-list">
@@ -874,7 +947,8 @@
             <li>✅ 地域のお客様の住まいづくりに貢献できる</li>
           </ul>
         </div>
-      </div>
+        </div><!-- /.who-grid -->
+      </div><!-- /.who-layout -->
     </div>
   </section>
 
