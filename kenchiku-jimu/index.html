@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>営業事務スタッフ募集｜株式会社チタコーポレーション（イシンホーム半田店）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=DM+Sans:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #dde9f2;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --cyan:         #00bcd4;
+      --cyan-dark:    #0097a7;
+      --cyan-light:   #e0f7fa;
+      --yellow-bg:    #fdfbe8;
+      --ink:          #1a1a1a;
+      --ink2:         #3a3a3a;
+      --muted:        #7a8a99;
+      --border:       #c8dce8;
+      --page-bg:      #dde9f2;
+      --card-bg:      #ffffff;
+      --section-bg:   #eaf3f9;
+    }
+
+    /* ===== Layout ===== */
+    .container { max-width: 840px; margin: 0 auto; padding: 0 20px; }
+    .section    { padding: 80px 0; }
+    .section-white { background: var(--card-bg); }
+    .section-yellow { background: var(--yellow-bg); }
+
+    /* ===== Section Head ===== */
+    .section-head { text-align: center; margin-bottom: 52px; }
+    .section-head .en {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: .25em;
+      color: var(--cyan);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .section-head h2 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .section-head p {
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    /* ===== Tag ===== */
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin: 3px 4px 3px 0;
+      letter-spacing: .03em;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    /* ===== Header ===== */
+    .site-header {
+      background: var(--card-bg);
+      padding: 0 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,150,180,0.08);
+    }
+    .site-header .inner {
+      max-width: 840px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-header .logo img { height: 42px; width: auto; }
+    .header-btn {
+      background: #f5a623;
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 24px;
+      letter-spacing: .04em;
+      transition: background .2s, transform .2s;
+    }
+    .header-btn:hover { background: #e09010; transform: translateY(-1px); }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: var(--cyan) url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&fit=crop&q=80&auto=format') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 20px 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(0,188,212,0.82) 0%, rgba(0,100,130,0.88) 100%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 60px;
+      background: var(--card-bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.25);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 6px 20px;
+      border-radius: 20px;
+      letter-spacing: .1em;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .hero h1 {
+      font-size: clamp(1.7rem, 5vw, 2.7rem);
+      font-weight: 900;
+      line-height: 1.45;
+      letter-spacing: -.01em;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    .hero .sub {
+      font-size: 1.0rem;
+      color: rgba(255,255,255,0.95);
+      margin-bottom: 32px;
+      line-height: 2;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+    .hero-tags { margin-bottom: 44px; }
+    .hero-cta {
+      display: inline-block;
+      background: #f5a623;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      max-width: 280px;
+      width: 100%;
+      border-radius: 50px;
+      letter-spacing: .04em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    .hero-cta:hover {
+      background: #e09010;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Points ===== */
+    .points-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .point-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 36px 20px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,150,180,0.08);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .point-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,150,180,0.14);
+    }
+    .point-card .icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .point-card .num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: .22em;
+      color: var(--cyan);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .point-card h3 {
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ===== Job ===== */
+    .job-intro {
+      font-size: 0.95rem;
+      color: var(--ink2);
+      line-height: 1.95;
+      margin-bottom: 40px;
+      padding: 22px 24px;
+      border-radius: 12px;
+      border-left: 4px solid var(--cyan);
+      background: var(--cyan-light);
+    }
+    .job-intro strong { color: var(--ink); }
+    .job-list { list-style: none; }
+    .job-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .job-list li:last-child { border-bottom: none; }
+    .job-list li .icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: var(--cyan-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .job-list li .content strong {
+      display: block;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .job-list li .content p {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .job-note {
+      margin-top: 32px;
+      padding: 18px 22px;
+      background: var(--cyan-light);
+      border-radius: 10px;
+      font-size: 0.88rem;
+      color: var(--ink2);
+    }
+    .job-note strong { color: var(--cyan-dark); }
+
+    /* ===== Salary ===== */
+    .salary-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,150,180,0.08);
+    }
+    .salary-card-head {
+      background: var(--cyan);
+      color: #fff;
+      padding: 18px 28px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+    .salary-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .salary-row:last-child { border-bottom: none; }
+    .salary-row .label {
+      flex-shrink: 0;
+      width: 110px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--cyan-dark);
+      background: var(--cyan-light);
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .salary-row .value { font-size: 0.95rem; color: var(--ink2); }
+    .salary-row .value strong {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--cyan-dark);
+      letter-spacing: -.01em;
+    }
+    .salary-highlight {
+      margin-top: 20px;
+      padding: 18px 22px;
+      background: var(--cyan-light);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--ink2);
+    }
+
+    /* ===== Atmosphere ===== */
+    .atmosphere-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .atm-card {
+      padding: 28px 22px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,150,180,0.08);
+      transition: transform .25s;
+    }
+    .atm-card:hover { transform: translateY(-5px); }
+    .atm-card .icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .atm-card h3 { font-size: 0.93rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .atm-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.8; }
+
+    .voice-box {
+      background: var(--cyan);
+      border-radius: 16px;
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+    }
+    .voice-box::before {
+      content: '"';
+      font-family: Georgia, serif;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.15);
+      position: absolute;
+      top: -10px; left: 20px;
+      line-height: 1;
+    }
+    .voice-box p { font-size: 0.98rem; line-height: 2; position: relative; }
+    .voice-box .speaker {
+      margin-top: 16px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-align: right;
+      opacity: 0.8;
+      letter-spacing: .04em;
+    }
+
+    /* ===== Requirements ===== */
+    .req-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.9rem;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,150,180,0.08);
+    }
+    .req-table th {
+      background: var(--cyan);
+      color: #fff;
+      padding: 16px 20px;
+      text-align: left;
+      font-weight: 700;
+      width: 140px;
+      vertical-align: top;
+      font-size: 0.82rem;
+    }
+    .req-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--ink2);
+      background: var(--card-bg);
+    }
+    .req-table tr:last-child td,
+    .req-table tr:last-child th { border-bottom: none; }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      background: linear-gradient(135deg, var(--cyan) 0%, #0097a7 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta-section h2 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+    .cta-section p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 40px;
+      line-height: 2;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: #f5a623;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 17px 56px;
+      border-radius: 50px;
+      letter-spacing: .04em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .cta-btn:hover {
+      background: #e09010;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Apply Form ===== */
+    .apply-form {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 40px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0,150,180,0.08);
+    }
+    .form-group { margin-bottom: 24px; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .required {
+      background: #f44336;
+      color: #fff;
+      font-size: 0.6rem;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .optional {
+      background: #bbb;
+      color: #fff;
+      font-size: 0.6rem;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group input[type="number"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--ink);
+      background: #f7fbfd;
+      transition: border-color .2s, box-shadow .2s;
+      appearance: auto;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--cyan);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(0,188,212,0.12);
+    }
+    .form-group textarea { resize: vertical; }
+    .checkbox-group { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    .check-label { display: flex; align-items: center; gap: 7px; font-size: 0.9rem; cursor: pointer; }
+    .check-label input { width: auto; accent-color: var(--cyan); }
+    .form-submit { text-align: center; margin-top: 36px; }
+    .submit-btn {
+      background: #f5a623;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 16px 60px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      letter-spacing: .06em;
+      box-shadow: 0 4px 16px rgba(245,166,35,0.35);
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    .submit-btn:hover {
+      background: #e09010;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(245,166,35,0.4);
+    }
+    .form-note { margin-top: 12px; font-size: 0.76rem; color: var(--muted); }
+    .form-success {
+      background: #e0f7fa;
+      border-left: 4px solid var(--cyan);
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+      color: var(--cyan-dark);
+      font-weight: 700;
+      line-height: 1.8;
+    }
+    /* ===== Phone Apply ===== */
+    .phone-apply {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      background: var(--card-bg);
+      border: 2px solid #f5a623;
+      border-radius: 14px;
+      padding: 20px 28px;
+      margin-bottom: 24px;
+    }
+    .phone-apply-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .phone-apply-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #f5a623;
+      letter-spacing: .02em;
+    }
+    .phone-apply-num:hover { text-decoration: underline; }
+    .phone-apply-hours {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .contact-info {
+      text-align: center;
+      padding: 28px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,150,180,0.06);
+    }
+    .contact-info p { font-size: 0.78rem; font-weight: 700; color: var(--cyan); margin-bottom: 8px; letter-spacing: .06em; }
+    .contact-address { font-size: 0.88rem; color: var(--ink2); line-height: 2; }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      background: #1a2a35;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 40px 20px 32px;
+      font-size: 0.76rem;
+      letter-spacing: .04em;
+    }
+    .site-footer .footer-logo { margin: 0 auto 20px; height: 36px; width: auto; opacity: 0.85; }
+    .site-footer strong { color: rgba(255,255,255,0.75); }
+
+    /* ===== Job Image ===== */
+    .job-feature-img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
+
+    /* ===== About Company ===== */
+    .about-banner {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .about-card {
+      background: var(--page-bg);
+      border-radius: 16px;
+      padding: 32px 22px;
+      text-align: center;
+      transition: transform .25s;
+    }
+    .about-card:hover { transform: translateY(-5px); }
+    .about-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .about-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .about-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.8; }
+
+    /* ===== Atmosphere Photos ===== */
+    .atm-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .atm-photos img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== Who We Want ===== */
+    .who-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .who-img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .who-card {
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+    .who-card.who-yes { background: var(--cyan-light); }
+    .who-card.who-note { background: var(--yellow-bg); border: 1.5px solid #f0e860; }
+    .who-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: var(--cyan-dark);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--cyan);
+    }
+    .who-card.who-note .who-label { color: #8a7a00; border-bottom-color: #d4c800; }
+    .who-list { list-style: none; }
+    .who-list li {
+      font-size: 0.9rem;
+      color: var(--ink2);
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      line-height: 1.6;
+    }
+    .who-list li:last-child { border-bottom: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 640px) {
+      .section { padding: 56px 0; }
+      .hero { padding: 64px 20px 80px; }
+      .points-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .who-layout { grid-template-columns: 1fr; }
+      .who-img { aspect-ratio: 16/7; }
+      .who-grid { grid-template-columns: 1fr; }
+      .atm-photos { grid-template-columns: 1fr; }
+      .atm-photos img { height: auto; }
+      .atmosphere-grid { grid-template-columns: 1fr; }
+      .apply-form { padding: 28px 20px; }
+      .salary-row { flex-wrap: wrap; gap: 6px; padding: 14px 20px; }
+      .salary-row .label { width: auto; }
+      .req-table, .req-table tbody, .req-table tr { display: block; }
+      .req-table th, .req-table td { display: block; width: 100%; }
+      .req-table th { padding-bottom: 4px; }
+      .req-table td { padding-top: 8px; border-bottom: 1px solid var(--border); }
+      .voice-box { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo">
+        <a href="/"><img src="../logo.png" alt="CHITACOH 株式会社チタコーポレーション"></a>
+      </div>
+      <a href="#apply-form" class="header-btn">応募する</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="badge">RECRUIT — パート・アルバイト募集中</div>
+    <h1>
+      住まいづくりで、<br>
+      誰かの人生に関わる<br>
+      仕事を。
+    </h1>
+    <p class="sub">
+      書類づくりや来客対応など、<br>基本から丁寧にお教えします。<br>
+      あなたのサポートが、<br>お客様の理想の住まいを支えています。
+    </p>
+    <div class="hero-tags">
+      <span class="tag">未経験でもOK</span>
+      <span class="tag">パート・アルバイト</span>
+      <span class="tag">土日祝も大歓迎</span>
+      <span class="tag">不動産業界経験者大歓迎</span>
+    </div>
+    <a href="#apply-form" class="hero-cta">応募フォームへ進む →</a>
+  </section>
+
+  <!-- Job Content -->
+  <section class="section section-white" id="job">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Work</span>
+        <h2>仕事内容</h2>
+        <p>住宅建築をサポートする営業事務スタッフのお仕事です。<br>一つひとつ丁寧にお教えしますので、不動産業界・事務が初めての方もご安心ください。</p>
+      </div>
+
+      <img
+        src="../images/仕事内容.JPG"
+        alt="仕事内容"
+        class="job-feature-img"
+      >
+      <div class="job-intro">
+        書類づくり・請求書処理・来客対応など、日々のオフィス業務全般をお任せします。<strong>テンプレートやマニュアルが整っている</strong>ので、未経験からでもしっかり習得できます。
+      </div>
+
+      <ul class="job-list">
+        <li>
+          <div class="icon">📄</div>
+          <div class="content">
+            <strong>書類作成・管理</strong>
+            <p>追加指示書・POP・製本図面資料の作成と整理。テンプレートがあるので未経験でも取り組みやすいです。</p>
+          </div>
+        </li>
+        <li>
+          <div class="icon">☕</div>
+          <div class="content">
+            <strong>お客様応対</strong>
+            <p>お茶出し・電話対応など、来店されたお客様への簡単な接客対応です。笑顔でご案内をお願いします。</p>
+          </div>
+        </li>
+        <li>
+          <div class="icon">✨</div>
+          <div class="content">
+            <strong>環境整備</strong>
+            <p>ショールーム・オフィスの清掃・整頓。お客様を気持ちよくお迎えできる空間づくりも大切な仕事のひとつです。</p>
+          </div>
+        </li>
+        <li>
+          <div class="icon">🎨</div>
+          <div class="content">
+            <strong>コーディネート</strong>
+            <p>住宅の内装・設備のカラーや素材選びのお手伝い。センスを活かしながら、お客様の理想の住まいをサポートします。</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="job-note">
+        最初は先輩スタッフが隣でしっかりサポートします。わからないことはいつでも気軽に質問できる環境です。
+      </div>
+    </div>
+  </section>
+
+  <!-- Points -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Point</span>
+        <h2>この仕事の4つのポイント</h2>
+      </div>
+      <div class="points-grid">
+        <div class="point-card">
+          <div class="icon">📝</div>
+          <div class="num">POINT 01</div>
+          <h3>未経験からスタートできる</h3>
+        </div>
+        <div class="point-card">
+          <div class="icon">🏡</div>
+          <div class="num">POINT 02</div>
+          <h3>住まいづくりに携われる</h3>
+        </div>
+        <div class="point-card">
+          <div class="icon">💬</div>
+          <div class="num">POINT 03</div>
+          <h3>聞きやすい雰囲気でサポート体制◎</h3>
+        </div>
+        <div class="point-card">
+          <div class="icon">✨</div>
+          <div class="num">POINT 04</div>
+          <h3>2026年2月リニューアル！<br>綺麗な新事務所で働ける</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salary -->
+  <section class="section section-white" id="salary">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Salary &amp; Conditions</span>
+        <h2>給与・待遇</h2>
+      </div>
+      <div class="salary-card">
+        <div class="salary-card-head">給与・勤務条件</div>
+        <div class="salary-card-body">
+          <div class="salary-row">
+            <div class="label">時給</div>
+            <div class="value"><strong>1,200</strong> 円〜</div>
+          </div>
+          <div class="salary-row">
+            <div class="label">雇用形態</div>
+            <div class="value">パート・アルバイト</div>
+          </div>
+          <div class="salary-row">
+            <div class="label">勤務地</div>
+            <div class="value">愛知県半田市山代町2-104-7</div>
+          </div>
+          <div class="salary-row">
+            <div class="label">勤務日</div>
+            <div class="value">9:00~17:00の中で調整可（1日5時間〜）<br>土日祝に働ける方は大歓迎！</div>
+          </div>
+          <div class="salary-row">
+            <div class="label">応募資格</div>
+            <div class="value">未経験歓迎・学歴不問<br>基本的なPC操作ができる方歓迎</div>
+          </div>
+        </div>
+      </div>
+      <div class="salary-highlight">
+        <span style="font-size:1.4rem;">🌟</span>
+        <span>シフトは相談しながら柔軟に調整します。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Company -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">About Us</span>
+        <h2>チタコーポレーションについて</h2>
+        <p>私たちは愛知県半田市を拠点に、知多半島の住まいづくりを支え続けてきた会社です。</p>
+      </div>
+      <img
+        src="../images/事務所外観.png"
+        alt="イシンホーム半田店 事務所外観"
+        class="about-banner"
+      >
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🏢</div>
+          <h3>創業30年の実績</h3>
+          <p>地域に根ざして30年。長年にわたり積み重ねた信頼と実績で、地域のお客様に選ばれ続けています。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">📍</div>
+          <h3>地域密着</h3>
+          <p>半田市・知多半島を中心に、地元のお客様に寄り添った住まい提案を行っています。地域をよく知るスタッフが丁寧に対応します。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🏠</div>
+          <h3>豊かな住まいづくり</h3>
+          <p>「人と街を豊かに」をビジョンに、イシンホームブランドで高品質な住宅を提供。働きながら住まいづくりの現場を身近に感じられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atmosphere -->
+  <section class="section section-yellow" id="atmosphere">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Culture</span>
+        <h2>職場の雰囲気</h2>
+      </div>
+      <div class="atm-photos">
+        <img
+          src="../images/仕事風景１.jpg"
+          alt="仕事風景"
+        >
+        <img
+          src="../images/仕事風景２.jpg"
+          alt="仕事風景"
+        >
+      </div>
+      <div class="atmosphere-grid">
+        <div class="atm-card">
+          <div class="icon">🙋</div>
+          <h3>なんでも聞きやすい</h3>
+          <p>スタッフ同士の仲が良く、わからないことをすぐ確認できる空気があります。「こんなこと聞いていいのかな」という心配はいりません。</p>
+        </div>
+        <div class="atm-card">
+          <div class="icon">🤝</div>
+          <h3>チームで助け合う</h3>
+          <p>困っているメンバーがいれば自然とフォローし合えるチーム。一人で抱え込まなくて大丈夫な環境です。</p>
+        </div>
+        <div class="atm-card">
+          <div class="icon">🌱</div>
+          <h3>成長できる</h3>
+          <p>住宅・建築の知識がゼロでも大丈夫。実際の業務を通じて、事務スキルもコーディネートの感覚も少しずつ身につきます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Want -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">For You</span>
+        <h2>こんな方にぴったりのお仕事です</h2>
+        <p>当てはまる方はぜひご応募ください！</p>
+      </div>
+      <div class="who-grid">
+        <div class="who-card who-yes">
+          <div class="who-label">こんな方、大歓迎！</div>
+          <ul class="who-list">
+            <li>📌 事務の仕事に興味があるが未経験</li>
+            <li>📌 子育てが落ち着いて働き始めたい</li>
+            <li>📌 不動産・住宅業界の経験がある</li>
+            <li>📌 人と接することが好き</li>
+            <li>📌 土日祝に働ける・働きたい</li>
+            <li>📌 半田市が好きな方</li>
+          </ul>
+        </div>
+        <div class="who-card who-note">
+          <div class="who-label">こんなお仕事です</div>
+          <ul class="who-list">
+            <li>✅ 難しいスキルは不要、一から教えます</li>
+            <li>✅ 扶養範囲内の勤務調整OK</li>
+            <li>✅ 住宅・建築の知識が自然と身につく</li>
+            <li>✅ チームワークを大切にする職場</li>
+            <li>✅ 地域のお客様の住まいづくりに貢献できる</li>
+          </ul>
+        </div>
+        </div><!-- /.who-grid -->
+    </div>
+  </section>
+
+  <!-- Requirements -->
+  <section class="section" id="requirements">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Requirements</span>
+        <h2>募集要項</h2>
+      </div>
+      <table class="req-table">
+        <tbody>
+          <tr>
+            <th>会社名</th>
+            <td>株式会社チタコーポレーション</td>
+          </tr>
+          <tr>
+            <th>募集職種</th>
+            <td>営業事務スタッフ</td>
+          </tr>
+          <tr>
+            <th>雇用形態</th>
+            <td>パート・アルバイト</td>
+          </tr>
+          <tr>
+            <th>給与</th>
+            <td>時給 1,200円〜</td>
+          </tr>
+          <tr>
+            <th>勤務地</th>
+            <td>愛知県半田市山代町2-104-7<br><small style="color:var(--cyan-dark);font-weight:700;">✨ 2026年2月リニューアルオープン！綺麗な新事務所です。</small></td>
+          </tr>
+          <tr>
+            <th>勤務時間</th>
+            <td>9:00〜17:00の中で調整可（1日5時間〜）</td>
+          </tr>
+          <tr>
+            <th>休日</th>
+            <td>シフトによる（事務所定休日：火・水）</td>
+          </tr>
+          <tr>
+            <th>応募資格</th>
+            <td>
+              ・未経験歓迎<br>
+              ・学歴・経験不問<br>
+              ・基本的なPC操作ができる方（ExcelやWordが使える方は尚可）
+            </td>
+          </tr>
+          <tr>
+            <th>応募方法</th>
+            <td>下記フォームよりご応募ください。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Apply Form -->
+  <section class="section section-white" id="apply-form">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">Apply</span>
+        <h2>応募フォーム</h2>
+        <p>下記フォームにご記入の上、送信してください。<br>担当者よりご連絡いたします。</p>
+      </div>
+
+      <div class="phone-apply">
+        <span class="phone-apply-label">📞 お電話でも応募を受け付けています</span>
+        <a href="tel:0569-26-1681" class="phone-apply-num">0569-26-1681</a>
+        <span class="phone-apply-hours">（受付時間：9:00〜17:00 ／ 火・水定休）</span>
+      </div>
+
+      <form class="apply-form" name="apply" method="POST" action="https://formspree.io/f/xjgpdywv">
+        <div class="form-group">
+          <label for="name">お名前 <span class="required">必須</span></label>
+          <input type="text" id="name" name="name" placeholder="山田 花子" required>
+        </div>
+        <div class="form-group">
+          <label for="kana">フリガナ <span class="required">必須</span></label>
+          <input type="text" id="kana" name="kana" placeholder="ヤマダ ハナコ" required>
+        </div>
+        <div class="form-group">
+          <label for="age">年齢 <span class="required">必須</span></label>
+          <input type="number" id="age" name="age" placeholder="25" min="15" max="70" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">電話番号 <span class="required">必須</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="090-0000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>希望勤務日 <span class="optional">任意</span></label>
+          <div class="checkbox-group">
+            <label class="check-label"><input type="checkbox" name="days" value="平日"> 平日</label>
+            <label class="check-label"><input type="checkbox" name="days" value="土曜"> 土曜</label>
+            <label class="check-label"><input type="checkbox" name="days" value="日曜"> 日曜</label>
+            <label class="check-label"><input type="checkbox" name="days" value="祝日"> 祝日</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">ひとこと・質問など <span class="optional">任意</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="志望動機や気になることなど、お気軽にどうぞ。"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="submit-btn">応募する →</button>
+          <p class="form-note">送信後、担当者よりご連絡いたします（通常2〜3営業日以内）</p>
+        </div>
+        <div id="form-success" class="form-success" style="display:none;">
+          ご応募ありがとうございます！<br>担当者よりご連絡いたします。
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Back to List -->
+  <div style="text-align:center; padding:48px 20px 0;">
+    <a href="/" style="display:inline-block; font-size:0.9rem; font-weight:700; color:var(--cyan-dark); border:2px solid var(--cyan-dark); padding:14px 40px; border-radius:50px; transition:background .2s, color .2s;">← 求人一覧に戻る</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <img src="../logo.png" alt="CHITACOH" class="footer-logo">
+    <p><strong>株式会社チタコーポレーション</strong></p>
+    <p style="margin-top:6px;">© 2025 CHITACOH Corporation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
