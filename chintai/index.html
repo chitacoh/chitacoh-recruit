@@ -225,15 +225,36 @@
       color: var(--muted);
       line-height: 1.8;
     }
+    .job-feature-img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
     .job-note {
       margin-top: 32px;
-      padding: 18px 22px;
+      padding: 22px 28px;
       background: var(--cyan-light);
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 0.88rem;
       color: var(--ink2);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-left: 4px solid var(--cyan);
+    }
+    .job-note img {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
     }
     .job-note strong { color: var(--cyan-dark); }
+    @media (max-width: 640px) {
+      .job-note { flex-direction: column; text-align: center; }
+      .job-note img { margin: 0 auto; }
+    }
 
     /* ===== Points ===== */
     .points-grid {
@@ -678,6 +699,8 @@
         <p>知多半島エリアで部屋をお探しのお客様に賃貸物件をご紹介する営業スタッフを募集します。</p>
       </div>
 
+      <img src="../images/賃貸_接客風景.png" alt="接客風景" class="job-feature-img">
+
       <div class="job-intro">
         初めての一人暮らし、転職、ご結婚など、大切な場面でお客様の「住まい探し」に寄り添います。<strong>未経験から始め、先輩スタッフのもとで一から丁寧に学べる環境</strong>を用意しています。
       </div>
@@ -714,7 +737,8 @@
       </ul>
 
       <div class="job-note">
-        「わからないことは何でも聞いてください」——経験豊富な川瀬リーダーが、あなたの成長を隣でしっかり支えます。
+        <img src="../images/賃貸_川瀬さん.png" alt="川瀬リーダー">
+        <p>「わからないことは何でも聞いてください」——経験豊富な川瀬リーダーが、あなたの成長を隣でしっかり支えます。</p>
       </div>
     </div>
   </section>
@@ -835,8 +859,8 @@
         <h2>職場の雰囲気</h2>
       </div>
       <div class="atm-photos">
-        <img src="../images/仕事風景１.jpg" alt="仕事風景">
-        <img src="../images/仕事風景２.jpg" alt="仕事風景">
+        <img src="../images/賃貸_店舗写真１.png" alt="店舗写真">
+        <img src="../images/賃貸_集合写真.jpeg" alt="集合写真">
       </div>
       <div class="atmosphere-grid">
         <div class="atm-card">
